@@ -1,0 +1,26 @@
+{
+    /**
+    **:表示任意目录
+    *:表示任意文件
+
+    */
+    "include": ["./src/**/*"],
+    "compilerOptions": {
+        "strict": true, //控制所有严格模式
+        "target": "ES6",
+        "module": "ES6",// 模块化的标准  commonjs amd es6 umd
+        "outDir": "./dist",//编译后输出目录
+        //"lib": [] 执行的环境
+       // "outFile": ""//将所有编译的JS合并到一个文件
+       //"allowJs": false //是否对JS文件编译
+       //"checkJs": false 是否以TS的语法检查js代码符合语法规范
+       //"removeComments": false //释放移除注释
+       //"noEmit": false //不生成编译后的文件
+       //"noEmitOnError": false //有错时不生成编译后的文件
+       //"alwaysStrict": false // 编译后的文件是否开启严格模式
+       //"noImplicitAny": false //不允许隐式的any
+       //"strictNullChecks": true  //严格检查空值
+      
+    }
+
+}
