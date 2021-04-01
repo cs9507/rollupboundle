@@ -24,6 +24,8 @@
     "typescript": "^4.2.3"
   },
   "dependencies": {
+    "@types/ali-oss": "^6.0.8",
+    "axios": "^0.21.1",
     "rollup-plugin-uglify": "^6.0.4",
     "the-answer": "^1.0.0"
   }

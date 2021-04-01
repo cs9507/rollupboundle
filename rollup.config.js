@@ -7,12 +7,19 @@ import { terser } from "rollup-plugin-terser"; //生成环境使用
 const env = false //开发环境不用开启 使用process.env
 
 const rollupConfig = {
-    input: 'src/main.js',
-    output: {
-        file: `dist/boundle.js`,
-        name: 'rollpack', //打包的内容挂载到window name就是window的名称
-        format: 'umd' //cjs esm
-    },
+    input: 'src/index.ts',
+    output: [
+        {
+          file: "dist/index.esm.js",
+          format: "esm",  
+          sourcemap: true
+        },
+        {
+          format: "umd",
+          file: "dist/index.js",
+          sourcemap: true
+        }
+      ],
     plugins: [ 
         // typescript(),
         json(),
